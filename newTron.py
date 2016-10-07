@@ -292,10 +292,10 @@ avg_turns = total_turns / float( i - failed_to_tron )
 failed_avg_size = failed_starting_size / float( failed_to_tron )
 avg_size = success_starting_size / float( i - failed_to_tron )
 
-print "Turn three tron: ", turn_three_tron / float( i ) * 100
-print "Turn three Karn: ", turn_three_karn / float( i ) * 100
-print "Average turn tron: ", avg_turns
-print "Have Karn when tron is done: ", total_have_karn / float( i ) * 100
-print "Failed to get tron by tun 10: ", failed_to_tron / float( i ) * 100
-print "Mulled to an average of: ", avg_size
-print "When failed to get tron, mulled to: ", failed_avg_size
+print "Turn three tron: %.2f%%" % (turn_three_tron / float( i ) * 100)
+print "Turn three Karn: %.2f%%" % (turn_three_karn / float( i ) * 100)
+print "Average turn tron: %.2f" % avg_turns
+print "Have Karn when tron is done: %.2f%%" % (total_have_karn / float( i ) * 100)
+print "Failed to get tron by tun 10: %.2f%%" % (failed_to_tron / float( i ) * 100)
+print "Average starting hand size: %.2f" % avg_size
+print "Average starting hand size when failed to get tron: %.2f" % failed_avg_size
